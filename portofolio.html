@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="crossorigin"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/55b36cb18a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/portofolio.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Home</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+      }
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        top: -30.6%;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        margin: auto;
+        z-index: -1;
+      }
+
+      /* Next & previous buttons */
+      .prev {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #f7543e;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        right: 5%;
+        margin-top: -22px;
+        color: #f7543e;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .next:hover,
+      .prev:hover {
+        background-color: rgb(255, 255, 156);
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .next,
+        .prev,
+        .text {
+          font-size: 11px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top" id="top">
+      <div>
+        <a href="" class="nav-aboutme" id="yo">About<span>Me</span>.</a>
+      </div>
+      <div class="menu">
+        <!-- Your menu items go here -->
+        <a class="a-home" href="#gradien">
+          <b>Home</b>
+        </a>
+        <a class="a-about" href="#gradien2">
+          <b>My profile</b>
+        </a>
+        <a class="a-hobbies" href="#Hobbies">
+          <b>Hobbies</b>
+        </a>
+        <a class="a-contact" href="#form">
+          <b>Contact me</b>
+        </a>
+      </div>
+    </div>
+    <div class="gradient" id="gradien"></div>
+    <div class="teksdibanner">
+      <h1 class="teksnya">Hi, You are welcomed!</h1>
+      <h3 class="teksbawahnya">This is my first website</h3>
+      <div class="sectionIconSosmed" id="kontek">
+        <div class="icons">
+          <a
+            href="https://www.facebook.com/share/oPwp8mi8Jfv9kNAM/?mibextid=qi2Omg"
+            class="fb"
+            id="logo"
+          >
+            <div>
+              <i class="fa-brands fa-facebook"></i>
+              <span class="namasosmed">Facebook</span>
+            </div>
+          </a>
+          <a
+            href="https://www.instagram.com/invites/contact/?igsh=1cloiikx7p9dm&utm_content=pl8v9x3"
+            class="ig"
+            id="logo"
+          >
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+              <span class="namasosmed">Instagram</span>
+            </div>
+          </a>
+          <a
+            href="www.linkedin.com/in/abil-gamal-shakavi-ab5815299"
+            class="li"
+            id="logo"
+          >
+            <div>
+              <i class="fa-brands fa-linkedin"></i>
+              <span class="namasosmed">Linkedin</span>
+            </div>
+          </a>
+          <a href="https://github.com/baalW" class="gb" id="logo">
+            <div>
+              <i class="fa-brands fa-github"></i>
+              <span class="namasosmed">Github</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/img1.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/img2.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/img3.jpg" style="width: 100%" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="section1" id="home">
+        <div class="home" id="gradien2">
+          <p class="paragraf1">
+            <span class="yo">Yo<span class="tandaSeru">!</span></span
+            ><br /><br />As a student pursuing a degree in manufacturing, I have
+            developed a deep understanding of various aspects of production and
+            industrial technology. Throughout my academic journey, I have
+            studied a range of disciplines including production processes,
+            manufacturing systems design, quality control, and materials
+            engineering. This education has equipped me with analytical and
+            technical skills essential for understanding and optimizing
+            manufacturing processes. In addition, I am also focusing on the
+            field of programming. My interest in programming stems from a desire
+            to integrate information technology with manufacturing processes to
+            create more efficient and innovative solutions.
+          </p>
+        </div>
+        <div class="fotoku">
+          <img src="img/profilku.png" alt="abil" class="imgabil" />
+        </div>
+        <div class="gradient2"></div>
+      </div>
+    </div>
+    <div class="myhobbies" id="Hobbies">
+      <h1 class="titlehobbies">My Hobbies</h1>
+      <div class="hobbies">
+        <div class="img1">
+          <img src="img/1.png" alt="game" class="imggg" />
+          <h3 class="tekshobi">Gaming</h3>
+        </div>
+        <div class="img2">
+          <img src="img/2.png" alt="musik" class="imggg" />
+          <h3 class="tekshobi">Music</h3>
+        </div>
+        <div class="img3">
+          <img src="img/3.png" alt="coding" class="imggg" />
+          <h3 class="tekshobi">Coding</h3>
+        </div>
+      </div>
+    </div>
+    <h1 class="h1form" id="form">Contact Me</h1>
+    <div class="form">
+      <div id="dataForm" class="yangdiisi">
+        <div class="nama">
+          <label for="nama" id="p">Nama:</label><br />
+          <input type="text" id="nama" name="nama" required="required" />
+        </div>
+        <br /><br />
+        <div class="date">
+          <label for="dob" id="p">Tanggal Lahir:</label><br />
+          <input type="date" id="dob" name="dob" required="required" />
+        </div>
+        <br /><br />
+        <div class="gender">
+          <label for="gender" id="p">Jenis Kelamin:</label><br />
+          <select id="gender" name="gender" required="required">
+            <option value="">Pilih</option>
+            <option value="Laki-Laki">Laki-Laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+        <br /><br />
+        <div class="pesan">
+          <label for="message" id="p">Pesan:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required="required"
+          ></textarea>
+        </div>
+        <br /><br />
+        <button type="submit" class="tombol">Send</button>
+      </div>
+      <div class="hasilnya">
+        <div class="result-container" id="resultContainer">
+          <h1>Hasil</h1>
+          <p class="tampilanhasil"></p>
+          <div id="results"></div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <script src="js/portofolio.js"></script>
+  </body>
+</html>

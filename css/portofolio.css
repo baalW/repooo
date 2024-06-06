@@ -1,0 +1,627 @@
+:root {
+    --primary: #f7543e;
+    --bg: rgb(255, 255, 156);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.togglehome {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggleabout {
+    position: absolute;
+    top: 38rem;
+}
+
+.navbarr {
+    background-color: rgb(255, 255, 156);
+    top: 0;
+    height: 4rem;
+    position: absolute;
+    z-index: 99999999;
+}
+
+.WebContainer {
+    width: 100%;
+    height: auto;
+}
+.articles {
+    width: 90%;
+    /*Takes 90% width from WebContainer*/
+    height: auto;
+    margin: auto;
+}
+
+/* all selector tuh pake * */
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: var(--bg);
+    max-width: auto;
+    min-height: 100%;
+}
+
+.top {
+    background-color: #f7543e;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 99999999;
+}
+
+.top .nav-aboutme {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--bg);
+    padding-top: 4px;
+    padding-left: 1.2rem;
+}
+
+.top .nav-aboutme span {
+    color: #000000;
+}
+
+.menu a {
+    color: var(--bg);
+    padding: 1.1rem;
+    font-size: 1.1rem;
+}
+
+.menu a:hover {
+    background-color: black;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.menu a::after {
+    transform-origin: 0 0;
+    content: "";
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #000000;
+    transform: scaleX(1);
+    transition: 0.6s;
+    z-index: 9999;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.menu a:not(:hover) {
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+.menu a:hover::after {
+    transform: scaleX(0.3);
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+}
+
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.section1 .paragraf1 .tandaSeru {
+    font-family: "Alata", sans-serif;
+    font-weight: 600;
+    font-size: 150px;
+    color: var(--primary);
+    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
+}
+
+.sectionIconSosmed {
+    display: inline-block;
+    top: 48vh;
+    padding-left: 15.6vh;
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.sectionIconSosmed .icons {
+    display: inline-block;
+    gap: 1rem;
+}
+
+.sectionIconSosmed .icons .fb {
+    display: inline-block;
+    color: rgb(255, 255, 156);
+    margin: 0 5px;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    background: #f7543e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    z-index: 9999;
+}
+
+.sectionIconSosmed .icons .ig {
+    display: inline-block;
+    color: rgb(255, 255, 156);
+    margin: 0 5px;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    background: #f7543e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    z-index: 9999;
+}
+
+.sectionIconSosmed .icons .li {
+    display: inline-block;
+    color: rgb(255, 255, 156);
+    margin: 0 5px;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    background: #f7543e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.sectionIconSosmed .icons .gb {
+    display: inline-block;
+    color: rgb(255, 255, 156);
+    margin: 0 5px;
+    height: 45px;
+    width: 45px;
+    overflow: hidden;
+    background: #f7543e;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.sectionIconSosmed .icons #logo {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.sectionIconSosmed .icons #logo:hover {
+    width: 150px;
+}
+
+.sectionIconSosmed .icons #logo:nth-child(1):hover {
+    background: #106BFF;
+}
+
+.sectionIconSosmed .icons #logo:nth-child(2):hover {
+    background: linear-gradient(to top right, #ff8a00, #e52e71);
+}
+
+.sectionIconSosmed .icons #logo:nth-child(3):hover {
+    background: #086B9C;
+}
+
+.sectionIconSosmed .icons #logo:nth-child(4):hover {
+    background: #161414;
+}
+
+.namasosmed {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    white-space: nowrap;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+.sectionIconSosmed:hover .namasosmed {
+    transform: translate(0, -50%);
+    transition: 0.3s;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sectionIconSosmed:not(:hover) .namasosmed {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    transform: translate(-100%, -50%);
+    white-space: nowrap;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+.sectionIconSosmed .icons #logo i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.container {
+    padding-top: 75vh;
+    z-index: -1;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.paragraf1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    padding-top: 7vh;
+    font-size: 18px;
+    font-weight: 300px;
+    line-height: 1.5rem;
+    width: 37rem;
+    height: 10%;
+    text-align: left;
+}
+
+.yo {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 150px;
+    color: var(--primary);
+}
+
+.triangle {
+    width: 80px;
+    height: 100px;
+    border-left: 320px solid transparent;
+    border-right: 260px solid transparent;
+    border-bottom: 500px solid var(--primary);
+}
+
+.imgabil {
+    max-width: 100vw;
+    max-height: 80vh;
+
+}
+
+.gradient2 {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 55vw;
+    top: 100%;
+    width: 50vw;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(255, 255, 156) 2%, transparent 22%);
+    z-index: 2000000;
+}
+
+.section2 {
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.tentangaku {
+    padding-top: 2.35rem;
+}
+
+.abouth1 {
+    width: 25rem;
+    height: 60px;
+    background-color: #f7543e;
+    overflow: visible;
+    position: absolute;
+    left: -3.5rem;
+}
+
+.tentangaku h1 {
+    color: rgb(255, 255, 156);
+    padding-top: 4px;
+    font-size: 2.5rem;
+    padding-left: 7rem;
+}
+
+.pe {
+    position: absolute;
+    padding-top: 3.5rem;
+}
+
+.tentangaku p {
+    font-size: 1.1rem;
+    padding-right: 45%;
+    text-align: justify;
+    padding-left: 0.3%;
+}
+
+.imgtentangaku {
+    display: flex;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 40px;
+}
+
+.teksnya {
+    font-size: 3rem;
+    padding-left: 15.6vh;
+    color: var(--bg);
+    text-shadow: 0 0 18px #000000;
+}
+
+.teksbawahnya {
+    font-size: larger;
+    padding-left: 15.6vh;
+    color: var(--bg);
+    text-shadow: 0 0 18px #000000;
+}
+
+.teksnya {
+    font-family: Montserrat;
+    padding-top: 30vh;
+}
+
+.teksbawahnya {
+    font-family: Montserrat;
+    font-size: medium;
+}
+
+.banner1 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+.titlehobbies {
+    font-size: 35px;
+    padding-left: 15.6vh;
+    color: black;
+    padding-top: 23vh;
+}
+
+.gradient {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgb(255, 255, 156) 0.1%, transparent 19%);
+    z-index: 2;
+}
+
+.hobbies {
+    padding-top: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    justify-items: center;
+}
+
+.imggg {
+    height: 40vh;
+    width: 18vw;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--primary);
+    box-shadow: 0 0 18px var(--primary);
+}
+
+.tekshobi {
+    padding-top: 3vh;
+    font-size: 1.3rem;
+}
+
+.imggg:hover {
+    height: 50vh;
+    width: 23vw;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.imggg:not(:hover){
+    height: 40vh;
+    width: 18vw;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.form-container {
+    width: 50vw;
+}
+
+.result-container {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.result-container:hover .result-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.result-item span {
+    display: block;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.h1form {
+    font-size: 35px;
+    padding-left: 15.6vh;
+    color: black;
+    padding-top: 23vh;
+    padding-bottom: 4vh;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6vh;
+    padding-left: 7vw;
+    padding-right: 15.6vh;
+}
+
+.name,
+.date,
+.gender,
+.pesan {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: larger;
+    align-items: flex-start;
+}
+
+.tombol {
+    width: 30vw;
+}
+
+#name,
+#dob,
+#gender,
+#message {
+    width: 15vw;
+}
+
+.result-container {
+    width: 50vw;
+    height: 56.5vh;
+}
+
+.tombol {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: var(--primary);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+}
+
